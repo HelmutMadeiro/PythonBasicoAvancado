@@ -1,7 +1,11 @@
 import random
 
 
-def jogar():
+def jogar() :
+    """
+
+    :rtype: object
+    """
     print("**********************************")
     print("bem vindo no jogo da adivinhação ")
     print("**********************************")
@@ -47,3 +51,5 @@ def jogar():
                 pontos_perdidos = abs(numero_secreto - chute)
                 pontos = pontos - pontos_perdidos
     print("Fim de jogo")
+if (__name__ == "__main__"):
+    jogar()
